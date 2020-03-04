@@ -15,6 +15,8 @@ SRC_URI[sha256sum] = "86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f74
 
 inherit autotools gettext texinfo lib_package ptest
 
+DEPENDS_class-native += "readline"
+
 # Needed for dbm python module
 EXTRA_OECONF = "-enable-libgdbm-compat"
 
